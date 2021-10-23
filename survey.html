@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            background-color:darkblue;
+            height:10vh;
+            width:100%;
+            position:fixed;
+            overflow:hidden;
+            top:0;
+        }
+        .nav a{
+            float:left;
+            text-decoration: none;
+            padding: 20px 20px;
+            font-size: 20px;
+            color:white;
+        }
+        a:hover{
+            background-color:cyan;
+        }
+        #v{
+        margin-left: 600px;
+        margin-top: 20px;
+        width:250px;
+        }
+
+        body{
+            background-image:url("https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/df/11/06/exterior.jpg");
+            background-repeat: no-repeat;
+            background-position: fixed;
+            background-attachment: fixed;
+            
+        }
+            
+
+
+        .main{
+            
+            width:60%;
+            margin-left: 200px;
+            height: 100vh;
+            /* background-color:dimgray; */
+             opacity:90%;
+       
+            
+
+            
+        }
+        form{
+              margin:60px 200px;  
+             padding:15px;
+             width:400px;
+             
+             height:90vh;
+             color:white;
+              }
+        #btn{
+            margin: 20px 70px;
+            position: absolute;
+            width:100px;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color:cyan;
+            color:tomato;
+        }
+        #btn:hover{
+            color:wheat;
+        }
+        #btn1{
+            margin: 20px 200px;
+            position: absolute;
+            width:90;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color:cyan;
+            color:tomato;
+     
+        }
+        #btn1:hover{
+            color:wheat;
+        }
+            #name{
+                width:120%;
+                height:4vh;
+
+            }
+            #gmail{
+                width:120%;
+                height:4vh;
+            }
+            #mb{
+                width:120%;
+                height:4vh;
+            }
+            #pass{
+                width:120%;
+                height:4vh;
+            }
+            #adr{
+                width:120%;
+                height:4vh;
+            }
+            .select{
+                width:120%;
+                height:4vh
+            }
+            #tx{
+                width:120%;
+            }
+            #chk{
+                margin-left: 60px;
+
+            }
+            
+        
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="login.html">login</a>
+        <a href="singh up.html">sign up</a>
+        <input id="v" type="text" placeholder="Search"/>
+        
+
+    </div>
+   
+    <div class="main">
+        
+        <form>
+            <!-- <h3 style="text-align: center;"> Servey From </h3> -->
+            
+            <table>
+                
+                
+                        <label style="color:turquoise;">
+                            Name
+                        </label>
+                    
+                    
+                    <tr>
+                    <td>
+                        <input type="text" placeholder="Enter Your full Name" name="name" id="name" required minlength="3" pattern="[a-Z]"/>
+                    </td>
+                </tr>
+                
+
+            
+            <tr>
+                <td>
+                    <label style="color:turquoise;">
+                        E-mail
+                    </label>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="gmail" placeholder="Enter Your Gmail" name="gmail" id="gmail" required  pattern=".+@gmail.com"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="color:turquoise;">
+                    Mobile
+                    </label>
+                </td>
+                
+                </tr>
+                <tr>
+                <td>
+                    <input type="tel"  placeholder="Enter Your Mobile Number" name="mb" id="mb" required minlength="10" maxlength="10" pattern="[0-9]{10}"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="color:turquoise;">
+                        Address
+                    </label>
+                </td>
+                </tr>
+                <tr>
+                <td>
+                    <input type="text"  placeholder="Enter Your Address" name="adr" id="adr" required  pattern=
+                    "[a-Z]{0-9}"/>
+                </td>
+            </tr>
+        
+            <tr>
+            
+            <td>
+                <label style="color:turquoise;">
+                     State
+                </label>
+            </td>
+            </tr>
+            <tr>
+            <td>
+                <select  class="select">
+                    <option> Maharastra</option>
+                    <option>
+                        Gujrat
+                    </option>
+                    <option>
+                        telgana
+                    </option>
+                    <option>
+                        tamilnadu
+
+                    </option>
+                    <option>
+                        keral
+                    </option>
+                </select>
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label style="color:turquoise;">
+                        Choose food:
+                    </label>
+            
+                    <label style="color:yellow ; margin-left:8px;">pizza </label>
+                    <input style="margin-left:10px;" type="checkbox"   name="chk" id="chk"/>
+                    <label style="color:yellow;">
+                        Burger
+                    </label>
+                
+                    <input type="checkbox"  style="margin-left:15px;  name="chk" id="chk"/>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    <label style="color:yellow; margin-left:85px;">
+                        machurian
+                    </label>
+            
+                    <input type="checkbox" style="margin-left:15px;   name="chk" id="chk"/>
+                    <label style="color:yellow; margin-left:10px;"> Noodles</label>
+                    <input type="checkbox"  style="margin-left:10px;  name="chk" id="chk"/>
+                </td>
+           
+            </tr>
+
+
+                        <tr>
+                <td>
+                    <label style="color:turquoise;">
+                        Food Quality:
+                    </label>
+                
+                
+                
+                
+                    <label  style="color:yellow;">
+                        Good
+                    </label>
+                    <input type="radio"  name="gen" id="gen"/>
+                
+                    <label style="color:yellow;"> Exellent</label>
+                    <input type="radio"  name="gen" id="gen"/>
+                    <label style="color:yellow;"> Bad</label>
+                    <input type="radio" name="gen" id="gen"/>
+               
+                   </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="color:turquoise;">
+                    Dinning Out: 
+                    </label>
+                
+                
+            
+                
+                    <label style="color:yellow;">
+                        Good
+                    </label>
+                    <input type="radio"  name="gen" id="gen1"/>
+                
+                    <label style="color:yellow;">Exellent</label>
+                    <input type="radio"  name="gen" id="gen1"/>
+                    <label style="color:yellow;">Bad</label>
+                    <input type="radio"  name="gen" id="gen1"/>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="color:turquoise;">Comment</label>
+                
+                    <textarea  id="tx" cols="10" rows="5"></textarea>
+                </td>
+            </tr>
+
+                        
+            <tr >
+                <td>
+                    <input  id="btn"type="submit" value="Submit"  />
+                    <input  id="btn1"type="reset" value="Reset"/>
+
+                    </button>
+                        
+                    
+                </td>
+                  </tr>
+  
+       
+            </table>
+       
+        </form>
+    </div>
+</body>
+</html>
